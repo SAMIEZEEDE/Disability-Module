@@ -1,0 +1,27 @@
+{
+    "classes": [
+        "orange",
+        "orangeBg",
+        "lightOrangeBg",
+        "colorWhite",
+        "font400",
+        "footer",
+        "footerRes",
+        "mat-horizontal-stepper-header",
+        "width95",
+        "border-bottom",
+        "border-top",
+        "borderR15",
+        "selectAllAply",
+        "needTitle",
+        "contentContainer",
+        "bgImage",
+        "baseContainer",
+        "baseContainerMobile",
+        "topTitle",
+        "bottomTitle",
+        "width100",
+        "bgWhite",
+        "registerBtn"
+    ]
+}

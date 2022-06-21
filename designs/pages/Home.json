@@ -1,0 +1,262 @@
+[
+    {
+        "id": "sd_ciYjPvotH0cbUFHN",
+        "type": "tab",
+        "createdDate": "2022-06-20T20:39:43.004Z",
+        "label": "Home",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "HomeComponent"
+    },
+    {
+        "id": "sd_whlhJ8hbcrcowbly",
+        "type": "OnInit",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_whlhJ8hbcrcowbly",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_DkSzWRF4yV8tbwrR"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "HomeComponent"
+    },
+    {
+        "id": "sd_DkSzWRF4yV8tbwrR",
+        "type": "PageVariables",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "title_text",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "{ \"title\" : \"disability\", \"subtitle\" : \"selected plan\" }"
+                }
+            },
+            {
+                "textIp": "stage",
+                "typedIpValue": {
+                    "type": "str",
+                    "value": "type_of_insurance"
+                }
+            }
+        ],
+        "functionName": "sd_DkSzWRF4yV8tbwrR",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true,
+        "serviceName": "HomeComponent"
+    },
+    {
+        "id": "sd_G4pmxluWOe0j4OPk",
+        "type": "PageStart",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "changeTitle",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "changeTitle",
+        "category": "General",
+        "x": 80,
+        "y": 240,
+        "wires": [
+            [
+                "sd_m6PFeLqPW2iBpSsu"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "HomeComponent"
+    },
+    {
+        "id": "sd_ohh4xl2Xs842IeaG",
+        "type": "Script",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "",
+        "functionName": "sd_ohh4xl2Xs842IeaG",
+        "category": "Function",
+        "x": 505,
+        "y": 240,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_m6PFeLqPW2iBpSsu",
+        "type": "PageVariables",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "title_text",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "{ \"title\" : \"disability\", \"subtitle\" : \"choose type\" }"
+                }
+            }
+        ],
+        "functionName": "sd_m6PFeLqPW2iBpSsu",
+        "category": "Function",
+        "x": 365,
+        "y": 240,
+        "wires": [
+            [
+                "sd_ohh4xl2Xs842IeaG"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_R968JyX64NGK3xjU",
+        "type": "PageSwitch",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "stage",
+        "propertyType": "this.page",
+        "propertyGv": "this.page.stage",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "type_of_insurance",
+                "vt": "str",
+                "gv": "\"type_of_insurance\""
+            },
+            {
+                "t": "eq",
+                "v": "choose_date",
+                "vt": "str",
+                "gv": "\"choose_date\""
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_R968JyX64NGK3xjU",
+        "category": "Function",
+        "x": 245,
+        "y": 360,
+        "wires": [
+            [
+                "sd_z2Yx62CvnIYLAqpV"
+            ],
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_lNbjJFvTeVgzTPOv",
+        "type": "PageStart",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "move_to_next",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "move_to_next",
+        "category": "General",
+        "x": 80,
+        "y": 360,
+        "wires": [
+            [
+                "sd_R968JyX64NGK3xjU"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "HomeComponent"
+    },
+    {
+        "id": "sd_n8RCmwCopsMU0Fcj",
+        "type": "Script",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "",
+        "functionName": "sd_n8RCmwCopsMU0Fcj",
+        "category": "Function",
+        "x": 545,
+        "y": 340,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_z2Yx62CvnIYLAqpV",
+        "type": "PageVariables",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "title_text",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "{ \"title\" : \"disability\", \"subtitle\" : \"choose type\" }"
+                }
+            }
+        ],
+        "functionName": "sd_z2Yx62CvnIYLAqpV",
+        "category": "Function",
+        "x": 385,
+        "y": 340,
+        "wires": [
+            [
+                "sd_n8RCmwCopsMU0Fcj"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    }
+]

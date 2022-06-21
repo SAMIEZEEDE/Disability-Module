@@ -1,0 +1,122 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+$white:white;
+$orange:#E9651F;
+$lightOrange:rgba(221, 96, 30, 0.12);
+$black:black;
+*{
+    margin:0;
+    padding:0;
+}
+.orange{
+    color:$orange;
+}
+.orangeBg{
+   background:$orange;
+}
+.lightOrangeBg{
+    background: rgba(221, 96, 30, 0.12);
+}
+.colorWhite{
+    color: $white;
+}
+
+.font400{
+    font-weight: 400;
+}
+.footer{
+border: 1px solid #E9651F !important;
+border-radius: 24px !important;
+padding: 13px 28px;
+width: 96px;
+height: 44px;
+}
+.footerRes{
+border: 1px solid #E9651F !important;
+border-radius: 24px !important;
+padding: 13px 28px;
+width: 90px;
+height: 41px;
+}
+.mat-horizontal-stepper-header {
+    padding: 0 !important;
+}
+.width95{
+width: 95%;
+}
+.border-bottom {
+  border-bottom: 3px solid #bbbbbb12;
+}
+.border-top {
+  border-top: 3px solid #bbbbbb12;
+}
+.borderR15{
+    border-radius: 9px;
+}
+.selectAllAply{
+    font-weight:400;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #BABFC7;
+    text-align: center;
+    font-family: "Halis R";
+}
+
+.needTitle{
+    font-weight:500;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #1273A2;
+    text-align: center;
+    letter-spacing: 0.4px;
+    font-family: "Halis R";
+
+}
+.contentContainer{
+    height: calc( 100vh - 273.29px);
+    width: 100%;
+    padding-top: 2em;
+}
+.bgImage{
+    background-image: url("Assets/Web/images/bgpicture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.baseContainer{
+    background-color: grey;
+    padding: 60.28px 120px 93.1px 120px;
+
+}
+.baseContainerMobile{
+    background-color: grey;
+    padding: 68px 16px 49px 16px;
+}
+.topTitle{
+    font-weight:500;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: $black;
+    font-family: 'Halis R';
+}
+.bottomTitle{
+    font-weight:500;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: $black;
+    font-family: "Halis R";
+    
+}
+
+.width100{
+width: 100%;
+}
+.bgWhite{
+    background-color: $white;
+}
+.registerBtn{
+background: rgba(221, 96, 30, 0.12);
+border: 1px solid #E9651F !important;
+border-radius:24px !important;
+}
