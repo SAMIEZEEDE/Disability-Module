@@ -1,0 +1,95 @@
+[
+    {
+        "id": "sd_Ij4pZsfCcn4IrYvE",
+        "type": "tab",
+        "createdDate": "2022-06-22T08:37:42.708Z",
+        "label": "select_Plan",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "select_PlanComponent"
+    },
+    {
+        "id": "sd_91IIoE5qx1YYlLFC",
+        "type": "OnInit",
+        "z": "sd_Ij4pZsfCcn4IrYvE",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "inputVariables": [
+            {
+                "key": "select_plan",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                }
+            }
+        ],
+        "localVariables": [],
+        "outputVariables": [],
+        "functionName": "sd_91IIoE5qx1YYlLFC",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_I4RCkUx6FyWknDMf"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "select_PlanComponent"
+    },
+    {
+        "id": "sd_I4RCkUx6FyWknDMf",
+        "type": "PageVariables",
+        "z": "sd_Ij4pZsfCcn4IrYvE",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "data",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "[]"
+                }
+            }
+        ],
+        "functionName": "sd_I4RCkUx6FyWknDMf",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_OgI8DThRDeu6E2bU"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_OgI8DThRDeu6E2bU",
+        "type": "Script",
+        "z": "sd_Ij4pZsfCcn4IrYvE",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log(\"data\",this.select_plan);",
+        "functionName": "sd_OgI8DThRDeu6E2bU",
+        "category": "Function",
+        "x": 280,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    }
+]

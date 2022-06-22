@@ -1,0 +1,46 @@
+<div fxLayout="column wrap" fxLayoutGap="2em" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
+      <h2 class="topTitle">
+        What is your gender at birth?</h2>
+      <p class="selectAllAply">
+        Select all that applay</p>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
+    <div fxLayout="column wrap" fxFlex="137px" fxLayoutAlign="center center" [fxShow]="true">
+      <mat-icon class="bodyIcons">face</mat-icon><label>
+        Male</label>
+      <mat-radio-button [value]="male" [required]="false" id="0"></mat-radio-button>
+    </div>
+    <div fxLayout="column wrap" fxFlex="137px" fxLayoutAlign="center center" [fxShow]="true">
+      <mat-icon class="bodyIcons">face</mat-icon><label>
+        Female</label>
+      <mat-radio-button [value]="female" [required]="false" id="1"></mat-radio-button>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutGap="2em" fxLayoutAlign="center center" [fxShow]="true">
+      <h2 class="topTitle">
+        Are you looking for maternity leave coverage?</h2>
+      <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
+        <div fxLayout="column wrap" fxFlex="137px" fxLayoutAlign="center center" [fxShow]="true"><label>
+            Yes</label>
+          <mat-radio-button [required]="false"></mat-radio-button>
+        </div>
+        <div fxLayout="column wrap" fxFlex="137px" fxLayoutAlign="center center" [fxShow]="true"><label>
+            No</label>
+          <mat-radio-button [required]="false"></mat-radio-button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
+      <h4 class="bottomTitle">
+        Not sure?</h4>
+      <p class="needTitle">
+        I Need Advise</p>
+    </div>
+  </div>
+</div>

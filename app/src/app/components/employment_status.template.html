@@ -1,0 +1,26 @@
+<div fxLayout="column wrap" fxLayoutGap="2em" fxLayoutAlign="center center" [fxShow]="true">
+  <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
+    <div fxLayout="column wrap" fxFlex="90" fxLayoutAlign="center center" [fxShow]="true">
+      <h2 class="topTitle">
+        Are you employed full-time and work at least 30 hours per week?</h2>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
+    <div fxLayout="column wrap" fxFlex="137px" fxLayoutAlign="center center" [fxShow]="true"><label>
+        Male</label>
+      <mat-radio-button [value]="male" [required]="false" id="0"></mat-radio-button>
+    </div>
+    <div fxLayout="column wrap" fxFlex="137px" fxLayoutAlign="center center" [fxShow]="true"><label>
+        Female</label>
+      <mat-radio-button [value]="female" [required]="false" id="1"></mat-radio-button>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
+    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
+      <h4 class="bottomTitle">
+        Not sure?</h4>
+      <p class="needTitle">
+        I Need Advise</p>
+    </div>
+  </div>
+</div>

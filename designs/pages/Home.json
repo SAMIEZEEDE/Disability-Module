@@ -17,6 +17,17 @@
         "viewType": "common",
         "nodeType": "start",
         "name": "",
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "select_plan",
+                "defaultValue": {
+                    "type": "any",
+                    "value": "[      { \"icon\": \"wc\",    \"paragraph\": \"I need to protect my income or family\" },   { \"icon\": \"I need health insurance\",    \"paragraph\": \"Accidental Insurance\" },   { \"icon\": \"group_add\",    \"paragraph\": \"I need to protect my business\" }   ]"
+                }
+            }
+        ],
+        "outputVariables": [],
         "functionName": "sd_whlhJ8hbcrcowbly",
         "category": "Lifecycle Events",
         "x": 30,
@@ -42,10 +53,10 @@
         "operation": "set",
         "globalVariables": [
             {
-                "textIp": "title_text",
+                "textIp": "select_plan",
                 "typedIpValue": {
                     "type": "literal",
-                    "value": "{ \"title\" : \"disability\", \"subtitle\" : \"selected plan\" }"
+                    "value": "[      { \"icon\": \"wc\",    \"paragraph\": \"I need to protect my income or family\" },   { \"icon\": \"I need health insurance\",    \"paragraph\": \"Accidental Insurance\" },   { \"icon\": \"group_add\",    \"paragraph\": \"I need to protect my business\" }  ]"
                 }
             },
             {
@@ -61,82 +72,8 @@
         "x": 180,
         "y": 30,
         "wires": [
-            []
-        ],
-        "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "generated": true,
-        "serviceName": "HomeComponent"
-    },
-    {
-        "id": "sd_G4pmxluWOe0j4OPk",
-        "type": "PageStart",
-        "z": "sd_ciYjPvotH0cbUFHN",
-        "viewType": "pages",
-        "nodeType": "start",
-        "name": "changeTitle",
-        "outputs": 1,
-        "inputVariables": [],
-        "localVariables": [],
-        "flow_type": "sync",
-        "functionName": "changeTitle",
-        "category": "General",
-        "x": 80,
-        "y": 240,
-        "wires": [
             [
-                "sd_m6PFeLqPW2iBpSsu"
-            ]
-        ],
-        "__n_excludedFromValidation__": {},
-        "generateNext": true,
-        "serviceName": "HomeComponent"
-    },
-    {
-        "id": "sd_ohh4xl2Xs842IeaG",
-        "type": "Script",
-        "z": "sd_ciYjPvotH0cbUFHN",
-        "viewType": "common",
-        "nodeType": "flow",
-        "name": "",
-        "script": "",
-        "functionName": "sd_ohh4xl2Xs842IeaG",
-        "category": "Function",
-        "x": 505,
-        "y": 240,
-        "wires": [
-            []
-        ],
-        "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "generated": true
-    },
-    {
-        "id": "sd_m6PFeLqPW2iBpSsu",
-        "type": "PageVariables",
-        "z": "sd_ciYjPvotH0cbUFHN",
-        "viewType": "pages",
-        "nodeType": "flow",
-        "name": "",
-        "inputs": 1,
-        "outputs": 1,
-        "operation": "set",
-        "globalVariables": [
-            {
-                "textIp": "title_text",
-                "typedIpValue": {
-                    "type": "literal",
-                    "value": "{ \"title\" : \"disability\", \"subtitle\" : \"choose type\" }"
-                }
-            }
-        ],
-        "functionName": "sd_m6PFeLqPW2iBpSsu",
-        "category": "Function",
-        "x": 365,
-        "y": 240,
-        "wires": [
-            [
-                "sd_ohh4xl2Xs842IeaG"
+                "sd_N8ylmqksrlYeBKPH"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -159,26 +96,19 @@
                 "v": "type_of_insurance",
                 "vt": "str",
                 "gv": "\"type_of_insurance\""
-            },
-            {
-                "t": "eq",
-                "v": "choose_date",
-                "vt": "str",
-                "gv": "\"choose_date\""
             }
         ],
         "checkall": "false",
         "repair": false,
-        "outputs": 2,
+        "outputs": 1,
         "functionName": "sd_R968JyX64NGK3xjU",
         "category": "Function",
         "x": 245,
         "y": 360,
         "wires": [
             [
-                "sd_z2Yx62CvnIYLAqpV"
-            ],
-            []
+                "sd_l6pWPShPA29WZgh5"
+            ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
@@ -209,17 +139,17 @@
         "serviceName": "HomeComponent"
     },
     {
-        "id": "sd_n8RCmwCopsMU0Fcj",
+        "id": "sd_N8ylmqksrlYeBKPH",
         "type": "Script",
         "z": "sd_ciYjPvotH0cbUFHN",
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "",
-        "functionName": "sd_n8RCmwCopsMU0Fcj",
+        "script": "page.protection_plan = [\n  \n  { \"icon\": \"wc\",\n   \"paragraph\": \"I need to protect my income or family\" },\n  { \"icon\": \"I need health insurance\",\n   \"paragraph\": \"Accidental Insurance\" },\n  { \"icon\": \"group_add\",\n   \"paragraph\": \"I need to protect my business\" },\n  \n]\n\n// \n// page.select_plan = [\n//   { \"icon\": \"accessible\", \"paragraph\": \"Disability Insurance\" },\n//   { \"icon\": \"airport_shuttle\", \"paragraph\": \"Accidental Insurance\" },\n//   { \"icon\": \"group_add\", \"paragraph\": \"Life Insurance\" },\n//   { \"icon\": \"grain\", \"paragraph\": \"Discount Plans\" }\n  \n// ]\n",
+        "functionName": "sd_N8ylmqksrlYeBKPH",
         "category": "Function",
-        "x": 545,
-        "y": 340,
+        "x": 285,
+        "y": 40,
         "wires": [
             []
         ],
@@ -228,7 +158,26 @@
         "generated": true
     },
     {
-        "id": "sd_z2Yx62CvnIYLAqpV",
+        "id": "sd_boDaZrtWwNVQOUHA",
+        "type": "Script",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.select_plan = [\n  { \"icon\": \"accessible\", \"paragraph\": \"Disability Insurance\" },\n  { \"icon\": \"airport_shuttle\", \"paragraph\": \"Accidental Insurance\" },\n  { \"icon\": \"group_add\", \"paragraph\": \"Life Insurance\" },\n  { \"icon\": \"grain\", \"paragraph\": \"Discount Plans\" }\n  \n]\n",
+        "functionName": "sd_boDaZrtWwNVQOUHA",
+        "category": "Function",
+        "x": 505,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_l6pWPShPA29WZgh5",
         "type": "PageVariables",
         "z": "sd_ciYjPvotH0cbUFHN",
         "viewType": "pages",
@@ -239,20 +188,20 @@
         "operation": "set",
         "globalVariables": [
             {
-                "textIp": "title_text",
+                "textIp": "select_plan",
                 "typedIpValue": {
                     "type": "literal",
-                    "value": "{ \"title\" : \"disability\", \"subtitle\" : \"choose type\" }"
+                    "value": ""
                 }
             }
         ],
-        "functionName": "sd_z2Yx62CvnIYLAqpV",
+        "functionName": "sd_l6pWPShPA29WZgh5",
         "category": "Function",
-        "x": 385,
-        "y": 340,
+        "x": 365,
+        "y": 360,
         "wires": [
             [
-                "sd_n8RCmwCopsMU0Fcj"
+                "sd_boDaZrtWwNVQOUHA"
             ]
         ],
         "__n_excludedFromValidation__": {},

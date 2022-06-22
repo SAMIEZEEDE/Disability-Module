@@ -15,6 +15,18 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-employment_statusComponent
+import { employment_statusComponent } from '../components/employment_status.component';
+//CORE_REFERENCE_IMPORT-ocupationComponent
+import { ocupationComponent } from '../components/ocupation.component';
+//CORE_REFERENCE_IMPORT-residing_stateComponent
+import { residing_stateComponent } from '../components/residing_state.component';
+//CORE_REFERENCE_IMPORT-GenderComponent
+import { GenderComponent } from '../components/Gender.component';
+//CORE_REFERENCE_IMPORT-date_of_birthComponent
+import { date_of_birthComponent } from '../components/date_of_birth.component';
+//CORE_REFERENCE_IMPORT-select_PlanComponent
+import { select_PlanComponent } from '../components/select_Plan.component';
 //CORE_REFERENCE_IMPORT-footerComponent
 import { footerComponent } from '../components/footer.component';
 //CORE_REFERENCE_IMPORT-toolaarComponent
@@ -53,6 +65,18 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-employment_statusComponent
+  employment_statusComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-ocupationComponent
+  ocupationComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-residing_stateComponent
+  residing_stateComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-GenderComponent
+  GenderComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-date_of_birthComponent
+  date_of_birthComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-select_PlanComponent
+  select_PlanComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-footerComponent
   footerComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-toolaarComponent

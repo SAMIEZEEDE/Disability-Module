@@ -4,10 +4,14 @@
         "orangeBg",
         "lightOrangeBg",
         "colorWhite",
+        "mat-form-field-infix",
         "font400",
         "footer",
         "footerRes",
         "mat-horizontal-stepper-header",
+        "mat-horizontal-content-container",
+        "bodyIcons",
+        "contentcoumnHeight",
         "width95",
         "border-bottom",
         "border-top",
@@ -22,6 +26,10 @@
         "bottomTitle",
         "width100",
         "bgWhite",
-        "registerBtn"
+        "registerBtn",
+        "mat-step-header",
+        "mat-step-icon-selected",
+        "mat-step-icon-state-done",
+        "mat-step-icon-state-edit"
     ]
 }

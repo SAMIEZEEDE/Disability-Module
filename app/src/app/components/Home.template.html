@@ -17,40 +17,9 @@
           <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
             <mat-horizontal-stepper [selected]="true" [selectedIndex]="position-1" #true="matHorizontalStepper" #stepper>
               <mat-step label="step1">
-                <div fxLayout="column wrap" style="overflow-y: auto;" fxLayoutGap="1em" fxLayoutAlign="center center" [fxShow]="true">
-                  <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
-                    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
-                      <h2 class="topTitle">
-                        How can we help you?</h2>
-                      <p class="selectAllAply">
-                        Select all that applay</p>
-                    </div>
-                  </div>
-                  <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center" [fxShow]="true">
-                    <div fxLayout="column wrap" style="height:179px" fxFlex="230px" fxLayoutAlign="start stretch" [fxShow]="true">
-                      <mat-icon>home</mat-icon>
-                      <mat-checkbox [required]="false"></mat-checkbox>
-                    </div>
-                    <div fxLayout="column wrap" style="height:179px" fxFlex="230px" fxLayoutAlign="start stretch" [fxShow]="true">
-                      <mat-icon>home</mat-icon>
-                      <mat-checkbox [required]="false"></mat-checkbox>
-                    </div>
-                    <div fxLayout="column wrap" style="height:179px" fxFlex="230px" fxLayoutAlign="start stretch" [fxShow]="true">
-                      <mat-icon>home</mat-icon>
-                      <mat-checkbox [required]="false"></mat-checkbox>
-                    </div>
-                    <div fxLayout="column wrap" style="height:179px" fxFlex="230px" fxLayoutAlign="start stretch" [fxShow]="true">
-                      <mat-icon>home</mat-icon>
-                      <mat-checkbox [required]="false"></mat-checkbox>
-                    </div>
-                  </div>
-                  <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
-                    <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
-                      <h4 class="bottomTitle">
-                        Not sure?</h4>
-                      <p class="needTitle">
-                        I Need Advise</p>
-                    </div>
+                <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
+                  <div fxLayout="row " fxLayoutAlign="start stretch" [fxShow]="true">
+                    <bh-employment_status class="width100"></bh-employment_status>
                   </div>
                 </div>
               </mat-step>
@@ -65,7 +34,7 @@
         <div fxLayout="column wrap" class="width100" fxLayoutAlign="center center" [fxShow]="true">
           <div fxLayout="row wrap" class="width95" fxLayoutGap="8px" fxLayoutAlign="end center" [fxShow]="true" fxLayoutAlign.xs="center center">
             <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true"><button mat-button class="orange lightOrangeBg footer" ngClass.xs="footerRes">Back</button></div>
-            <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true"><button mat-button class="colorWhite orangeBg footer" ngClass.xs="footerRes" (click)="changeTitle()">Next</button></div>
+            <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true"><button mat-button class="colorWhite orangeBg footer" ngClass.xs="footerRes" (click)="move_to_next()">Next</button></div>
           </div>
         </div>
       </div>

@@ -57,25 +57,21 @@ export class HomeComponent {
 
   sd_whlhJ8hbcrcowbly(bh) {
     try {
+      bh.local = {
+        select_plan: [
+          { icon: 'wc', paragraph: 'I need to protect my income or family' },
+          {
+            icon: 'I need health insurance',
+            paragraph: 'Accidental Insurance',
+          },
+          { icon: 'group_add', paragraph: 'I need to protect my business' },
+        ],
+      };
       bh = this.sd_DkSzWRF4yV8tbwrR(bh);
       //appendnew_next_sd_whlhJ8hbcrcowbly
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_whlhJ8hbcrcowbly');
-    }
-  }
-
-  changeTitle(...others) {
-    try {
-      var bh: any = this.__page_injector__
-        .get(SDPageCommonService)
-        .constructFlowObject(this);
-      bh.input = {};
-      bh.local = {};
-      bh = this.sd_m6PFeLqPW2iBpSsu(bh);
-      //appendnew_next_changeTitle
-    } catch (e) {
-      return this.errorHandler(bh, e, 'sd_G4pmxluWOe0j4OPk');
     }
   }
 
@@ -97,8 +93,13 @@ export class HomeComponent {
 
   sd_DkSzWRF4yV8tbwrR(bh) {
     try {
-      this.page.title_text = { title: 'disability', subtitle: 'selected plan' };
+      this.page.select_plan = [
+        { icon: 'wc', paragraph: 'I need to protect my income or family' },
+        { icon: 'I need health insurance', paragraph: 'Accidental Insurance' },
+        { icon: 'group_add', paragraph: 'I need to protect my business' },
+      ];
       this.page.stage = 'type_of_insurance';
+      bh = this.sd_N8ylmqksrlYeBKPH(bh);
       //appendnew_next_sd_DkSzWRF4yV8tbwrR
       return bh;
     } catch (e) {
@@ -106,23 +107,28 @@ export class HomeComponent {
     }
   }
 
-  sd_m6PFeLqPW2iBpSsu(bh) {
+  sd_N8ylmqksrlYeBKPH(bh) {
     try {
-      this.page.title_text = { title: 'disability', subtitle: 'choose type' };
-      bh = this.sd_ohh4xl2Xs842IeaG(bh);
-      //appendnew_next_sd_m6PFeLqPW2iBpSsu
-      return bh;
-    } catch (e) {
-      return this.errorHandler(bh, e, 'sd_m6PFeLqPW2iBpSsu');
-    }
-  }
+      const page = this.page;
+      page.protection_plan = [
+        { icon: 'wc', paragraph: 'I need to protect my income or family' },
+        { icon: 'I need health insurance', paragraph: 'Accidental Insurance' },
+        { icon: 'group_add', paragraph: 'I need to protect my business' },
+      ];
 
-  sd_ohh4xl2Xs842IeaG(bh) {
-    try {
-      //appendnew_next_sd_ohh4xl2Xs842IeaG
+      //
+      // page.select_plan = [
+      //   { "icon": "accessible", "paragraph": "Disability Insurance" },
+      //   { "icon": "airport_shuttle", "paragraph": "Accidental Insurance" },
+      //   { "icon": "group_add", "paragraph": "Life Insurance" },
+      //   { "icon": "grain", "paragraph": "Discount Plans" }
+
+      // ]
+
+      //appendnew_next_sd_N8ylmqksrlYeBKPH
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_ohh4xl2Xs842IeaG');
+      return this.errorHandler(bh, e, 'sd_N8ylmqksrlYeBKPH');
     }
   }
 
@@ -136,15 +142,7 @@ export class HomeComponent {
           undefined
         )
       ) {
-        bh = this.sd_z2Yx62CvnIYLAqpV(bh);
-      } else if (
-        this.sdService.operators['eq'](
-          this.page.stage,
-          'choose_date',
-          undefined,
-          undefined
-        )
-      ) {
+        bh = this.sd_l6pWPShPA29WZgh5(bh);
       }
 
       return bh;
@@ -153,23 +151,31 @@ export class HomeComponent {
     }
   }
 
-  sd_z2Yx62CvnIYLAqpV(bh) {
+  sd_l6pWPShPA29WZgh5(bh) {
     try {
-      this.page.title_text = { title: 'disability', subtitle: 'choose type' };
-      bh = this.sd_n8RCmwCopsMU0Fcj(bh);
-      //appendnew_next_sd_z2Yx62CvnIYLAqpV
+      this.page.select_plan = undefined;
+      bh = this.sd_boDaZrtWwNVQOUHA(bh);
+      //appendnew_next_sd_l6pWPShPA29WZgh5
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_z2Yx62CvnIYLAqpV');
+      return this.errorHandler(bh, e, 'sd_l6pWPShPA29WZgh5');
     }
   }
 
-  sd_n8RCmwCopsMU0Fcj(bh) {
+  sd_boDaZrtWwNVQOUHA(bh) {
     try {
-      //appendnew_next_sd_n8RCmwCopsMU0Fcj
+      const page = this.page;
+      page.select_plan = [
+        { icon: 'accessible', paragraph: 'Disability Insurance' },
+        { icon: 'airport_shuttle', paragraph: 'Accidental Insurance' },
+        { icon: 'group_add', paragraph: 'Life Insurance' },
+        { icon: 'grain', paragraph: 'Discount Plans' },
+      ];
+
+      //appendnew_next_sd_boDaZrtWwNVQOUHA
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_n8RCmwCopsMU0Fcj');
+      return this.errorHandler(bh, e, 'sd_boDaZrtWwNVQOUHA');
     }
   }
 
