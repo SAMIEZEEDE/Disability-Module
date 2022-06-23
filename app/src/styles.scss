@@ -144,3 +144,17 @@ border-radius:24px !important;
     background-color: #DD601E;
     color: #fff;
 }
+.input-symbol-euro {
+    position: relative;
+}
+.input-symbol-euro input {
+    padding-left:18px;
+}
+.input-symbol-euro:before {
+    position: absolute;
+    top: 0;
+    content:"R";
+    left: 5px;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+background-color: $orange !important; /*inner circle color change*/  }

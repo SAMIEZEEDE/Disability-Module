@@ -1732,8 +1732,8 @@
                                         "f66756c9-5119-052a-256f-9369a8181e0f": {
                                             "paletteKey": "FlexLayoutRow",
                                             "parentEditorKey": "46f911bc-7f5f-6312-4724-0db8791e9f00",
-                                            "isCommented": "false",
-                                            "commentid": null,
+                                            "isCommented": "true",
+                                            "commentid": "1655972961672",
                                             "designerReference": [
                                                 {
                                                     "_key": "componentLabel",
@@ -1794,12 +1794,286 @@
                                             "286c9e48-7c92-1d6b-b9ed-920abcd28f75": {
                                                 "paletteKey": "NEUTRINOS_VIEW_employment_status",
                                                 "parentEditorKey": "f66756c9-5119-052a-256f-9369a8181e0f",
-                                                "isCommented": "false",
-                                                "commentid": null,
+                                                "isCommented": "true",
+                                                "commentid": "1655972961672",
                                                 "designerReference": [
                                                     {
                                                         "_key": "componentLabel",
                                                         "_value": "employment_status",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p",
+                                                        "_useAsLabel": true
+                                                    },
+                                                    {
+                                                        "_key": "style",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "class",
+                                                        "_value": [
+                                                            "width100"
+                                                        ],
+                                                        "_type": "dav",
+                                                        "_attrDef": "p"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "b19c6d4a-9a89-71bc-d8f5-d05c2fdf8679": {
+                                            "paletteKey": "FlexLayoutRow",
+                                            "parentEditorKey": "46f911bc-7f5f-6312-4724-0db8791e9f00",
+                                            "isCommented": "true",
+                                            "commentid": "1655975570600",
+                                            "designerReference": [
+                                                {
+                                                    "_key": "componentLabel",
+                                                    "_value": "Row",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p",
+                                                    "_useAsLabel": true
+                                                },
+                                                {
+                                                    "_key": "style",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "class",
+                                                    "_value": "",
+                                                    "_type": "dav",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "fxFlex",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "fxLayoutGap",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "wrap",
+                                                    "_value": "wrap",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "layoutAlign",
+                                                    "_value": "start",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "pLayoutAlign",
+                                                    "_value": "stretch",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "[fxShow]",
+                                                    "_value": "true",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                }
+                                            ],
+                                            "64ce5f57-10af-e63f-8a48-f861d04b3747": {
+                                                "paletteKey": "NEUTRINOS_VIEW_income",
+                                                "parentEditorKey": "b19c6d4a-9a89-71bc-d8f5-d05c2fdf8679",
+                                                "isCommented": "true",
+                                                "commentid": "1655975570600",
+                                                "designerReference": [
+                                                    {
+                                                        "_key": "componentLabel",
+                                                        "_value": "income",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p",
+                                                        "_useAsLabel": true
+                                                    },
+                                                    {
+                                                        "_key": "style",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "class",
+                                                        "_value": [
+                                                            "width100"
+                                                        ],
+                                                        "_type": "dav",
+                                                        "_attrDef": "p"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "335318b8-d601-56ab-d287-c3336e07ce7d": {
+                                            "paletteKey": "FlexLayoutRow",
+                                            "parentEditorKey": "46f911bc-7f5f-6312-4724-0db8791e9f00",
+                                            "isCommented": "true",
+                                            "commentid": "1655975932220",
+                                            "designerReference": [
+                                                {
+                                                    "_key": "componentLabel",
+                                                    "_value": "Row",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p",
+                                                    "_useAsLabel": true
+                                                },
+                                                {
+                                                    "_key": "style",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "class",
+                                                    "_value": "",
+                                                    "_type": "dav",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "fxFlex",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "fxLayoutGap",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "wrap",
+                                                    "_value": "wrap",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "layoutAlign",
+                                                    "_value": "start",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "pLayoutAlign",
+                                                    "_value": "stretch",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "[fxShow]",
+                                                    "_value": "true",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                }
+                                            ],
+                                            "fa3d2219-0f8e-3e46-eec5-948790735f2c": {
+                                                "paletteKey": "NEUTRINOS_VIEW_government_emplyee",
+                                                "parentEditorKey": "335318b8-d601-56ab-d287-c3336e07ce7d",
+                                                "isCommented": "true",
+                                                "commentid": "1655975932220",
+                                                "designerReference": [
+                                                    {
+                                                        "_key": "componentLabel",
+                                                        "_value": "government_emplyee",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p",
+                                                        "_useAsLabel": true
+                                                    },
+                                                    {
+                                                        "_key": "style",
+                                                        "_value": "",
+                                                        "_type": "kv",
+                                                        "_attrDef": "p"
+                                                    },
+                                                    {
+                                                        "_key": "class",
+                                                        "_value": [
+                                                            "width100"
+                                                        ],
+                                                        "_type": "dav",
+                                                        "_attrDef": "p"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        "8485b4a8-30d6-9295-c397-6bf71c4e2df3": {
+                                            "paletteKey": "FlexLayoutRow",
+                                            "parentEditorKey": "46f911bc-7f5f-6312-4724-0db8791e9f00",
+                                            "commentid": null,
+                                            "designerReference": [
+                                                {
+                                                    "_key": "componentLabel",
+                                                    "_value": "Row",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p",
+                                                    "_useAsLabel": true
+                                                },
+                                                {
+                                                    "_key": "style",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "class",
+                                                    "_value": "",
+                                                    "_type": "dav",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "fxFlex",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "fxLayoutGap",
+                                                    "_value": "",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "wrap",
+                                                    "_value": "wrap",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "layoutAlign",
+                                                    "_value": "start",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "pLayoutAlign",
+                                                    "_value": "stretch",
+                                                    "_type": "a",
+                                                    "_attrDef": "p"
+                                                },
+                                                {
+                                                    "_key": "[fxShow]",
+                                                    "_value": "true",
+                                                    "_type": "kv",
+                                                    "_attrDef": "p"
+                                                }
+                                            ],
+                                            "554862e8-756c-522c-1b46-0f0c78ea984c": {
+                                                "paletteKey": "NEUTRINOS_VIEW_nicotin_status",
+                                                "parentEditorKey": "8485b4a8-30d6-9295-c397-6bf71c4e2df3",
+                                                "commentid": null,
+                                                "designerReference": [
+                                                    {
+                                                        "_key": "componentLabel",
+                                                        "_value": "nicotin_status",
                                                         "_type": "kv",
                                                         "_attrDef": "p",
                                                         "_useAsLabel": true

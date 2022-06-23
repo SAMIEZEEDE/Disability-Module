@@ -30,6 +30,10 @@
         "mat-step-header",
         "mat-step-icon-selected",
         "mat-step-icon-state-done",
-        "mat-step-icon-state-edit"
+        "mat-step-icon-state-edit",
+        "input-symbol-euro",
+        "mat-radio-button",
+        "mat-accent",
+        "mat-radio-inner-circle"
     ]
 }

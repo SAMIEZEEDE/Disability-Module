@@ -1,0 +1,55 @@
+[
+    {
+        "id": "sd_k8Y4LPodkRt2iQ2K",
+        "type": "tab",
+        "createdDate": "2022-06-23T09:17:39.400Z",
+        "label": "nicotin_status",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "nicotin_statusComponent"
+    },
+    {
+        "id": "sd_3OjLLFn8yd5K3iTT",
+        "type": "OnInit",
+        "z": "sd_k8Y4LPodkRt2iQ2K",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_3OjLLFn8yd5K3iTT",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_YjZYdpJbHqvbyKuf"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "nicotin_statusComponent"
+    },
+    {
+        "id": "sd_YjZYdpJbHqvbyKuf",
+        "type": "PageVariables",
+        "z": "sd_k8Y4LPodkRt2iQ2K",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_YjZYdpJbHqvbyKuf",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    }
+]

@@ -15,6 +15,12 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-nicotin_statusComponent
+import { nicotin_statusComponent } from '../components/nicotin_status.component';
+//CORE_REFERENCE_IMPORT-government_emplyeeComponent
+import { government_emplyeeComponent } from '../components/government_emplyee.component';
+//CORE_REFERENCE_IMPORT-incomeComponent
+import { incomeComponent } from '../components/income.component';
 //CORE_REFERENCE_IMPORT-employment_statusComponent
 import { employment_statusComponent } from '../components/employment_status.component';
 //CORE_REFERENCE_IMPORT-ocupationComponent
@@ -65,6 +71,12 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-nicotin_statusComponent
+  nicotin_statusComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-government_emplyeeComponent
+  government_emplyeeComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-incomeComponent
+  incomeComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-employment_statusComponent
   employment_statusComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-ocupationComponent
