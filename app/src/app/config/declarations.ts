@@ -120,7 +120,21 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
-  { path: 'Home', component: HomeComponent },
+  {
+    path: 'Home',
+    component: HomeComponent,
+    children: [
+      { path: 'date_of_birth', component: date_of_birthComponent },
+      { path: 'Gender', component: GenderComponent },
+      { path: 'residing_state', component: residing_stateComponent },
+      { path: 'ocupation', component: ocupationComponent },
+      { path: 'employment_status', component: employment_statusComponent },
+      { path: 'income', component: incomeComponent },
+      { path: 'government_emplyee', component: government_emplyeeComponent },
+      { path: 'nicotin_status', component: nicotin_statusComponent },
+      { path: 'select_Plan', component: select_PlanComponent },
+    ],
+  },
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

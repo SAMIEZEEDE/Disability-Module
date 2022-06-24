@@ -23,7 +23,7 @@
                 "key": "select_plan",
                 "defaultValue": {
                     "type": "any",
-                    "value": "[      { \"icon\": \"wc\",    \"paragraph\": \"I need to protect my income or family\" },   { \"icon\": \"I need health insurance\",    \"paragraph\": \"Accidental Insurance\" },   { \"icon\": \"group_add\",    \"paragraph\": \"I need to protect my business\" }   ]"
+                    "value": "[      { \"icon\": \"wc\",    \"paragraph\": \"I need to protect my income or family\" },   { \"icon\": \"local_hospital\",    \"paragraph\": \"Accidental Insurance\" },   { \"icon\": \"account_balance_wallet\",    \"paragraph\": \"I need to protect my business\" }   ]"
                 }
             }
         ],
@@ -56,7 +56,7 @@
                 "textIp": "select_plan",
                 "typedIpValue": {
                     "type": "literal",
-                    "value": "[      { \"icon\": \"wc\",    \"paragraph\": \"I need to protect my income or family\" },   { \"icon\": \"I need health insurance\",    \"paragraph\": \"Accidental Insurance\" },   { \"icon\": \"group_add\",    \"paragraph\": \"I need to protect my business\" }  ]"
+                    "value": "[      { \"icon\": \"wc\",    \"paragraph\": \"I need to protect my income or family\" },   { \"icon\": \"local_hospital\",    \"paragraph\": \"Accidental Insurance\" },   { \"icon\": \"account_balance_wallet\",    \"paragraph\": \"I need to protect my business\" }  ]"
                 }
             },
             {
@@ -64,6 +64,20 @@
                 "typedIpValue": {
                     "type": "str",
                     "value": "type_of_insurance"
+                }
+            },
+            {
+                "textIp": "stage1",
+                "typedIpValue": {
+                    "type": "str",
+                    "value": "date_of_birth"
+                }
+            },
+            {
+                "textIp": "stage2",
+                "typedIpValue": {
+                    "type": "str",
+                    "value": "select_Plan"
                 }
             }
         ],
@@ -96,11 +110,23 @@
                 "v": "type_of_insurance",
                 "vt": "str",
                 "gv": "\"type_of_insurance\""
+            },
+            {
+                "t": "eq",
+                "v": "select_Plan",
+                "vt": "str",
+                "gv": "\"select_Plan\""
+            },
+            {
+                "t": "eq",
+                "v": "date_of_birth",
+                "vt": "str",
+                "gv": "\"date_of_birth\""
             }
         ],
         "checkall": "false",
         "repair": false,
-        "outputs": 1,
+        "outputs": 3,
         "functionName": "sd_R968JyX64NGK3xjU",
         "category": "Function",
         "x": 245,
@@ -108,7 +134,11 @@
         "wires": [
             [
                 "sd_l6pWPShPA29WZgh5"
-            ]
+            ],
+            [
+                "sd_U9MkiYOZAL3DFJ50"
+            ],
+            []
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
@@ -168,7 +198,7 @@
         "functionName": "sd_boDaZrtWwNVQOUHA",
         "category": "Function",
         "x": 505,
-        "y": 360,
+        "y": 300,
         "wires": [
             []
         ],
@@ -198,11 +228,48 @@
         "functionName": "sd_l6pWPShPA29WZgh5",
         "category": "Function",
         "x": 365,
-        "y": 360,
+        "y": 320,
         "wires": [
             [
                 "sd_boDaZrtWwNVQOUHA"
             ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_unERiZFjSkVMYgUg",
+        "type": "Script",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "router.navigate(['/home/date_of_birth']);  // define your component where you want to go\n    ",
+        "functionName": "sd_unERiZFjSkVMYgUg",
+        "category": "Function",
+        "x": 465,
+        "y": 440,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true
+    },
+    {
+        "id": "sd_U9MkiYOZAL3DFJ50",
+        "type": "Navigation",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/Home/date_of_birth",
+        "functionName": "sd_U9MkiYOZAL3DFJ50",
+        "category": "Navigation",
+        "x": 345,
+        "y": 460,
+        "wires": [
+            []
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,

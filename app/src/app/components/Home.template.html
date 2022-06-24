@@ -1,4 +1,4 @@
-<div fxLayout="column wrap" class="bgImage baseContainer" fxLayoutAlign="start stretch" [fxShow]="true" fxFill ngClass.xs="baseContainerMobile">
+<div fxLayout="column " class="bgImage baseContainer" fxLayoutAlign="start stretch" [fxShow]="true" fxFill ngClass.xs="baseContainerMobile">
   <div fxLayout="row wrap" class="borderR15 width100 bgWhite" fxLayoutAlign="start stretch" [fxShow]="true">
     <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
       <div fxLayout="row wrap" class="border-bottom width100" fxFlex="60px" fxLayoutAlign="start stretch" [fxShow]="true">
@@ -9,25 +9,36 @@
           <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
             <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
               <p class="selectAllAply">
-                Select all that applay</p>
-              <h2 class="topTitle">
-                How can we help you?</h2>
+                Selected plan</p>
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                <h6 class="font18 topTitle">
+                  Disability Insurance</h6>
+                <mat-icon class="orange">descriptions</mat-icon>
+              </div>
             </div>
           </div>
           <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
             <mat-horizontal-stepper [selected]="true" [selectedIndex]="position-1" #true="matHorizontalStepper" #stepper>
               <mat-step label="step1">
                 <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
-                  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-                    <bh-nicotin_status class="width100"></bh-nicotin_status>
+                  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" *ngIf="page.select_plan">
+                    <bh-select_Plan class="width100" [select_plan_data]="page.select_plan" [select_plan]="page.select_plan"></bh-select_Plan>
                   </div>
+                  <router-outlet></router-outlet>
                 </div>
               </mat-step>
               <mat-step label="step2"></mat-step>
               <mat-step label="step3"></mat-step>
             </mat-horizontal-stepper>
           </div>
-          <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+        </div>
+      </div>
+      <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
+        <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
+          <h4 class="bottomTitle">
+            Not sure?</h4>
+          <p class="needTitle">
+            I Need Advise</p>
         </div>
       </div>
       <div fxLayout="row wrap" class="border-top width100" fxFlex="60px" fxLayoutAlign="center center" [fxShow]="true">
@@ -38,6 +49,12 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxFlex="71px" fxLayoutAlign="start stretch" [fxShow]="true" fxHide.xs="true">
+    <div>
+      <h4 class="disclaimer">Disclaimer</h4>
+      <p class="disclaimerParagraph"> is the marketing name of CamSolutions, LLC, an Oklahoma corporation. CamSolutions, LLC is a licensed independent insurance broker. CamSolutions, LLC operates in California as Woligo Insurance Solutions with the California license number (6002977) and is also licensed in Oklahoma (30009078&#x200A;1), Arizona (3000982823), and Texas (2572693). Other state insurance license numbers available on request. Read more</p>
     </div>
   </div>
 </div>

@@ -12,6 +12,7 @@ import {
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
 import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.service'; //_splitter_
+import { Router } from '@angular/router'; //_splitter_
 import { STEPPER_GLOBAL_OPTIONS } from '@angular/cdk/stepper'; //_splitter_
 //append_imports_end
 
@@ -60,11 +61,11 @@ export class HomeComponent {
       bh.local = {
         select_plan: [
           { icon: 'wc', paragraph: 'I need to protect my income or family' },
+          { icon: 'local_hospital', paragraph: 'Accidental Insurance' },
           {
-            icon: 'I need health insurance',
-            paragraph: 'Accidental Insurance',
+            icon: 'account_balance_wallet',
+            paragraph: 'I need to protect my business',
           },
-          { icon: 'group_add', paragraph: 'I need to protect my business' },
         ],
       };
       bh = this.sd_DkSzWRF4yV8tbwrR(bh);
@@ -95,10 +96,15 @@ export class HomeComponent {
     try {
       this.page.select_plan = [
         { icon: 'wc', paragraph: 'I need to protect my income or family' },
-        { icon: 'I need health insurance', paragraph: 'Accidental Insurance' },
-        { icon: 'group_add', paragraph: 'I need to protect my business' },
+        { icon: 'local_hospital', paragraph: 'Accidental Insurance' },
+        {
+          icon: 'account_balance_wallet',
+          paragraph: 'I need to protect my business',
+        },
       ];
       this.page.stage = 'type_of_insurance';
+      this.page.stage1 = 'date_of_birth';
+      this.page.stage2 = 'select_Plan';
       bh = this.sd_N8ylmqksrlYeBKPH(bh);
       //appendnew_next_sd_DkSzWRF4yV8tbwrR
       return bh;
@@ -143,6 +149,23 @@ export class HomeComponent {
         )
       ) {
         bh = this.sd_l6pWPShPA29WZgh5(bh);
+      } else if (
+        this.sdService.operators['eq'](
+          this.page.stage,
+          'select_Plan',
+          undefined,
+          undefined
+        )
+      ) {
+        bh = this.sd_U9MkiYOZAL3DFJ50(bh);
+      } else if (
+        this.sdService.operators['eq'](
+          this.page.stage,
+          'date_of_birth',
+          undefined,
+          undefined
+        )
+      ) {
       }
 
       return bh;
@@ -176,6 +199,20 @@ export class HomeComponent {
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_boDaZrtWwNVQOUHA');
+    }
+  }
+
+  async sd_U9MkiYOZAL3DFJ50(bh) {
+    try {
+      const { paramObj: qprm, path: path } =
+        this.sdService.getPathAndQParamsObj('/Home/date_of_birth');
+      await this.__page_injector__
+        .get(Router)
+        .navigate([this.sdService.formatPathWithParams(path, undefined)]);
+      //appendnew_next_sd_U9MkiYOZAL3DFJ50
+      return bh;
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_U9MkiYOZAL3DFJ50');
     }
   }
 

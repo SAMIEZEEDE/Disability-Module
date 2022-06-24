@@ -2,7 +2,45 @@
     "routes": [
         {
             "path": "Home",
-            "component": "HomeComponent"
+            "component": "HomeComponent",
+            "children": [
+                {
+                    "path": "date_of_birth",
+                    "component": "date_of_birthComponent"
+                },
+                {
+                    "component": "GenderComponent",
+                    "path": "Gender"
+                },
+                {
+                    "component": "residing_stateComponent",
+                    "path": "residing_state"
+                },
+                {
+                    "component": "ocupationComponent",
+                    "path": "ocupation"
+                },
+                {
+                    "component": "employment_statusComponent",
+                    "path": "employment_status"
+                },
+                {
+                    "component": "incomeComponent",
+                    "path": "income"
+                },
+                {
+                    "component": "government_emplyeeComponent",
+                    "path": "government_emplyee"
+                },
+                {
+                    "component": "nicotin_statusComponent",
+                    "path": "nicotin_status"
+                },
+                {
+                    "component": "select_PlanComponent",
+                    "path": "select_Plan"
+                }
+            ]
         },
         {
             "path": "''",

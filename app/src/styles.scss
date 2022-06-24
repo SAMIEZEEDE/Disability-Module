@@ -27,6 +27,9 @@ $grey:#BABFC7;
     
     border-top:0.84375em solid transparent !important;
 }
+.font18{
+    font-size: 18px;
+}
 
 .font400{
     font-weight: 400;
@@ -95,7 +98,7 @@ width: 95%;
 
 }
 .contentContainer{
-    height: calc( 100vh - 273.29px);
+    height: calc( 100vh - 317.48px);
     width: 100%;
     padding-top: 2em;
 }
@@ -106,16 +109,35 @@ width: 95%;
 }
 .baseContainer{
     background-color: grey;
-    padding: 60.28px 120px 93.1px 120px;
+    padding: 60.28px 120px 22.1px 120px;
+
+}
+.disclaimerParagraph{
+    font-family: 'Halis R';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: #B9B9C3;
+
+}
+.disclaimer{
+  font-family: 'Halis R';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+color: #5E5873;
 
 }
 .baseContainerMobile{
     background-color: grey;
     padding: 68px 16px 49px 16px;
+    height: 100vh;
 }
 .topTitle{
     font-weight:500;
-    font-size: 18px;
+    // font-size: 18px;
     line-height: 23.4px;
     color: $black;
     font-family: 'Halis R';
