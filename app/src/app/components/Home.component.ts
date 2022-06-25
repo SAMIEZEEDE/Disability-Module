@@ -149,7 +149,8 @@ export class HomeComponent {
         )
       ) {
         bh = this.sd_l6pWPShPA29WZgh5(bh);
-      } else if (
+      }
+      if (
         this.sdService.operators['eq'](
           this.page.stage,
           'select_Plan',
@@ -157,8 +158,9 @@ export class HomeComponent {
           undefined
         )
       ) {
-        bh = this.sd_U9MkiYOZAL3DFJ50(bh);
-      } else if (
+        bh = this.sd_1OBhb4zd8VGJFW3C(bh);
+      }
+      if (
         this.sdService.operators['eq'](
           this.page.stage,
           'date_of_birth',
@@ -202,10 +204,21 @@ export class HomeComponent {
     }
   }
 
+  sd_1OBhb4zd8VGJFW3C(bh) {
+    try {
+      this.page.date_of_birth = undefined;
+      bh = this.sd_U9MkiYOZAL3DFJ50(bh);
+      //appendnew_next_sd_1OBhb4zd8VGJFW3C
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_1OBhb4zd8VGJFW3C');
+    }
+  }
+
   async sd_U9MkiYOZAL3DFJ50(bh) {
     try {
       const { paramObj: qprm, path: path } =
-        this.sdService.getPathAndQParamsObj('/Home/date_of_birth');
+        this.sdService.getPathAndQParamsObj('/Home/Gender');
       await this.__page_injector__
         .get(Router)
         .navigate([this.sdService.formatPathWithParams(path, undefined)]);

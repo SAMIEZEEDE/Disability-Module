@@ -124,7 +124,7 @@
                 "gv": "\"date_of_birth\""
             }
         ],
-        "checkall": "false",
+        "checkall": "true",
         "repair": false,
         "outputs": 3,
         "functionName": "sd_R968JyX64NGK3xjU",
@@ -136,7 +136,7 @@
                 "sd_l6pWPShPA29WZgh5"
             ],
             [
-                "sd_U9MkiYOZAL3DFJ50"
+                "sd_1OBhb4zd8VGJFW3C"
             ],
             []
         ],
@@ -248,8 +248,8 @@
         "script": "router.navigate(['/home/date_of_birth']);  // define your component where you want to go\n    ",
         "functionName": "sd_unERiZFjSkVMYgUg",
         "category": "Function",
-        "x": 465,
-        "y": 440,
+        "x": 585,
+        "y": 300,
         "wires": [
             []
         ],
@@ -263,13 +263,45 @@
         "viewType": "client-pages",
         "nodeType": "flow",
         "name": "",
-        "path": "/Home/date_of_birth",
+        "path": "/Home/Gender",
         "functionName": "sd_U9MkiYOZAL3DFJ50",
         "category": "Navigation",
-        "x": 345,
-        "y": 460,
+        "x": 485,
+        "y": 420,
         "wires": [
             []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_1OBhb4zd8VGJFW3C",
+        "type": "PageVariables",
+        "z": "sd_ciYjPvotH0cbUFHN",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "date_of_birth",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_1OBhb4zd8VGJFW3C",
+        "category": "Function",
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "sd_U9MkiYOZAL3DFJ50"
+            ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,
